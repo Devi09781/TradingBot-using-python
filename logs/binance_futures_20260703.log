@@ -1,0 +1,9 @@
+2026-07-03 20:47:33 | INFO     | FuturesBot.CLI | Initializing Interactive Futures Trading CLI Environment...
+2026-07-03 20:47:33 | INFO     | FuturesBot.Orders | OrderManager ready to process execution routes.
+2026-07-03 20:47:33 | INFO     | FuturesBot.Validators | OrderValidator initialized. Fetching market structural constraints...
+2026-07-03 20:47:33 | INFO     | FuturesBot.Validators | Successfully cached trading rules for 2 symbols.
+2026-07-03 20:48:38 | DEBUG    | FuturesBot.Validators | Validation Passed for ETHUSDT. Adjusted Qty: 5.0, Price: None
+2026-07-03 20:48:44 | INFO     | FuturesBot.Orders | Preparing order instruction -> Type: MARKET | Side: BUY | Qty: 5.0 ETHUSDT
+2026-07-03 20:48:44 | DEBUG    | FuturesBot.Orders | Dispatching API order payload: {'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 5.0}
+2026-07-03 20:48:44 | INFO     | FuturesBot.Orders | 🎉 ORDER PLACED | ID: 123456789 | Status: NEW | Type: MARKET
+2026-07-03 20:48:44 | DEBUG    | FuturesBot.Orders | Full execution response dump: {'orderId': 123456789, 'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'executedQty': 5.0, 'avgPrice': '0.00'}

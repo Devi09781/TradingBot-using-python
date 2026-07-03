@@ -1,0 +1,12 @@
+2026-07-01 12:50:15 | INFO     | FuturesBot.CLI | Initializing Interactive Futures Trading CLI Environment...
+2026-07-01 12:50:15 | CRITICAL | FuturesBot.Orders | OrderManager initialization aborted: Missing Binance Testnet credentials in environment configuration.
+2026-07-01 12:50:15 | CRITICAL | FuturesBot.CLI | Failed to boot secure trading resources: Missing Binance Testnet credentials in environment configuration.
+2026-07-01 12:54:29 | INFO     | FuturesBot.CLI | Initializing Interactive Futures Trading CLI Environment...
+2026-07-01 12:54:29 | INFO     | FuturesBot.Orders | OrderManager ready to process execution routes.
+2026-07-01 12:54:29 | INFO     | FuturesBot.Validators | OrderValidator initialized. Fetching market structural constraints...
+2026-07-01 12:54:29 | INFO     | FuturesBot.Validators | Successfully cached trading rules for 2 symbols.
+2026-07-01 12:56:18 | DEBUG    | FuturesBot.Validators | Validation Passed for ETHUSDT. Adjusted Qty: 1.0, Price: None
+2026-07-01 12:56:22 | INFO     | FuturesBot.Orders | Preparing order instruction -> Type: MARKET | Side: BUY | Qty: 1.0 ETHUSDT
+2026-07-01 12:56:22 | DEBUG    | FuturesBot.Orders | Dispatching API order payload: {'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0}
+2026-07-01 12:56:22 | INFO     | FuturesBot.Orders | 🎉 ORDER PLACED | ID: 123456789 | Status: NEW | Type: MARKET
+2026-07-01 12:56:22 | DEBUG    | FuturesBot.Orders | Full execution response dump: {'orderId': 123456789, 'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'executedQty': 1.0, 'avgPrice': '0.00'}
