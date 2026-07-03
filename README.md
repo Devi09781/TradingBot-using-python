@@ -1,35 +1,33 @@
-```markdown
 # Binance Futures CLI Trading Bot
 
 ##  Overview
 
-This project is a Python command-line application that simulates placing **Market** and **Limit** orders for Binance USDT-M Futures. The project focuses on clean project architecture, command-line input handling, validation, logging, and exception handling.
+This project is a Python command-line application that simulates placing **Market** and **Limit** orders for **Binance USDT-M Futures**. It demonstrates a clean, modular project structure with command-line input handling, input validation, logging, and exception handling.
 
-> **Note:** This project currently runs in **mock mode** and does not connect to the Binance Futures Testnet. API integration can be added in the future.
+> **Note:** This project currently runs in **mock mode** and simulates order placement without connecting to the Binance Futures Testnet.
 
 ---
 
-## ✨ Features
+##  Features
 
-- Simulated Market Orders
-- Simulated Limit Orders
-- BUY and SELL order support
-- Command-Line Interface (CLI)
-- Input Validation
-- Modular Project Structure
-- Logging of Requests and Responses
-- Exception Handling
+* Simulated **Market Orders**
+* Simulated **Limit Orders**
+* Supports **BUY** and **SELL** order types
+* Command-Line Interface (CLI)
+* Input Validation
+* Modular Project Structure
+* Logging of Requests and Responses
+* Exception Handling
 
 ---
 
 ## 📂 Project Structure
 
-```
-
+```text
 trading_bot/
 │
 ├── bot/
-│   ├── **init**.py
+│   ├── __init__.py
 │   ├── client.py
 │   ├── orders.py
 │   ├── validators.py
@@ -40,47 +38,47 @@ trading_bot/
 ├── README.md
 ├── requirements.txt
 └── logs/
-
-````
+```
 
 ---
 
 ## ⚙️ Requirements
 
-- Python 3.x
+* Python 3.x
+* pip
 
 ---
 
 ## 🚀 Installation
 
-Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/your-username/trading_bot.git
 cd trading_bot
-````
+```
 
-Create a virtual environment:
+### 2. Create a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate the virtual environment:
+### 3. Activate the virtual environment
 
-### Windows
+**Windows**
 
 ```bash
 venv\Scripts\activate
 ```
 
-### macOS/Linux
+**macOS/Linux**
 
 ```bash
 source venv/bin/activate
 ```
 
-Install the required packages:
+### 4. Install the dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -90,13 +88,13 @@ pip install -r requirements.txt
 
 ## ▶️ Usage
 
-### Market Order
+### Place a Market Order
 
 ```bash
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.01
 ```
 
-### Limit Order
+### Place a Limit Order
 
 ```bash
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.01 --price 98000
@@ -106,16 +104,16 @@ python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.01 --price 
 
 ## 📝 Logging
 
-The application stores logs inside the `logs/` directory, including:
+The application stores logs in the **logs/** directory, including:
 
-* Order Requests
-* Simulated Responses
-* Validation Errors
-* Runtime Exceptions
+* Order requests
+* Simulated order responses
+* Validation errors
+* Runtime exceptions
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Technologies Used
 
 * Python 3
 * argparse
@@ -124,19 +122,17 @@ The application stores logs inside the `logs/` directory, including:
 
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Future Improvements
 
-* Binance Futures Testnet API Integration
-* Real Market & Limit Order Placement
-* Unit Testing
-* Configuration Management
-* Docker Support
+* Integrate with the Binance Futures Testnet API
+* Add API Key and Secret authentication
+* Place real Market and Limit orders
+* Support additional order types
+* Add unit tests
+* Improve configuration management
 
 ---
 
 ## 📄 License
 
-This project is developed for educational and learning purposes.
-
-```
-```
+This project is created for educational and learning purposes.
